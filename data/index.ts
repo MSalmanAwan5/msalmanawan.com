@@ -1,4 +1,5 @@
 export const navItems = [
+  { name: "Home", link: "/" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
@@ -75,7 +76,13 @@ export const projects = [
     title: "3D Solar System Planets to Explore",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: [
+      "/firebase.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/three.svg",
+      "/fm.svg",
+    ],
     link: "/ui.earth.com",
   },
   {
@@ -107,33 +114,93 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Totally impressed by Salman. He understand the requirements quickly and was able to provide quick fixes to the bugs. His communication skills and problem solving abilities are top notch. I would definitely hire him again soon. Highly Recommended!",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "I had the pleasure of working with Salman on a project which my team was stuck to resolve so it required a skilled React Native Developer with a strong focus on animations. I can confidently say that Salman exceeded all expectations and showcased an exceptional level of expertise",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "We had a great experience working with Mohammad. He displayed a great deal of business comprehension, patience, skills and productivity. This work involved solving complex problems of a different variety and Mohammad was able to provide great reliable solutions to our needs. I would highly recommend Mohammad to everyone!",
+
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Salman is an amazing software engineer. I would rate him top 10 on my personal list (15+ years industry exp), and will definitely use him again. He is very knowledgeable with js, react, mobile app development, full-stack, and has a great design and product sense which is absolutely critical for fast-paced startups. He can speak and write english very well and makes himself available during our working hours in the US.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Muhammad is a professional developer who possesses excellent communication skills. Working with him is very easy, as he is attentive to the project's requirements and motivated to meet them.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
+  },
+];
+
+export const imgArray = [
+  {
+    name: "/reactJs.png",
+    size: 100,
+  },
+  {
+    name: "/reactNative.png",
+    size: 50,
+  },
+  {
+    name: "/vueJs.png",
+    size: 80,
+  },
+  {
+    name: "/expressJs.png",
+    size: 100,
+  },
+  {
+    name: "/nodejs.png",
+    size: 100,
+  },
+  {
+    name: "/mongoDb.png",
+    size: 100,
+  },
+  {
+    name: "/googleCloud.png",
+    size: 130,
+  },
+  {
+    name: "/aws.png",
+    size: 100,
+  },
+  {
+    name: "/Microsoft.png",
+    size: 120,
+  },
+  {
+    name: "/goLangIcon.svg",
+    size: 75,
+  },
+  {
+    name: "/python.png",
+    size: 120,
+  },
+  {
+    name: "/oddo.png",
+    size: 75,
+  },
+  {
+    name: "/Azure.png",
+    size: 100,
+  },
+  {
+    name: "/Adobe.png",
+    size: 100,
   },
 ];
 
@@ -173,31 +240,58 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Sr. Software Engineer",
+    project: "Racqy",
+    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity Assisted in the development of a web-based platform using React.js, enhancing interactivity",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/getracqy_logo.jpeg",
+    href: "https://racqy.com/",
+    experiencId: "racqy",
+    images: ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg"],
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Full Stack Engineer",
+    project: "Roam Around - AI Travel Agent",
+    desc: "Salman is an amazing software engineer. I would rate him top 10 on my personal list (15+ years industry exp), and will definitely use him again. He is very knowledgeable with js, react, mobile app development, full-stack, and has a great design and product sense which is absolutely critical for fast-paced startups. He can speak and write english very well and makes himself available during our working hours in the US.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/roamaround_logo.jpeg",
+    href: "https://justasklayla.com/",
+    experiencId: "roamaround",
+    images: ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg"],
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Full Stack Developer",
+    project: "RedShelf",
+    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores Assisted in the development of a web-based platform using React.js, enhancing interactivity",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/redshelf_logo.jpeg",
+    href: "https://www.about.redshelf.com/",
+    experiencId: "redshelf",
+    images: ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg"],
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "React Native Developer",
+    project: "Chorus Sleep (YC W’21)",
+    desc: "Developed and maintained user-facing features using modern frontend technologies Assisted in the development of a web-based platform using React.js, enhancing interactivity",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/chorus_wellness_logo.jpeg",
+    href: "https://www.chorussleep.com/",
+    experiencId: "chorussleep",
+    images: ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg"],
+  },
+  {
+    id: 5,
+    title: "Software Engineer",
+    project: "ESketchers ",
+    desc: "Developed and maintained user-facing features using modern frontend technologies...",
+    className: "md:col-span-2",
+    thumbnail: "/esketchers_logo.jpeg",
+    href: "https://esketchers.com/",
+    experiencId: "esketchers",
+    images: ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg"],
   },
 ];
 
@@ -205,13 +299,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    href: "https://github.com/MSalmanAwan5",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    href: "https://www.linkedin.com/in/msalmanawan/",
   },
 ];

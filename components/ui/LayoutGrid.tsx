@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -84,8 +84,8 @@ const BlurImage = ({ card }: { card: Card }) => {
     <Image
       src={card.thumbnail}
       //   change image scale 500 to 100
-      height="100"
-      width="100"
+      height={100}
+      width={100}
       onLoad={() => setLoaded(true)}
       className={cn(
         "object-cover object-top absolute inset-0 h-full w-full transition duration-200",

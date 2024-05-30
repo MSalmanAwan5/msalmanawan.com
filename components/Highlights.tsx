@@ -1,10 +1,11 @@
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import SectionWrapper from "./SectionWrapper";
 
-const Grid = () => {
+const Highlights = () => {
   return (
-    <section id="about">
-      <BentoGrid className="w-full py-20">
+    <SectionWrapper>
+      <BentoGrid className="w-full">
         {gridItems.map((item, i) => (
           <BentoGridItem
             id={item.id}
@@ -21,8 +22,8 @@ const Grid = () => {
           />
         ))}
       </BentoGrid>
-    </section>
+    </SectionWrapper>
   );
 };
 
-export default Grid;
+export default Highlights;
