@@ -38,17 +38,8 @@ const Projects = ({ params }: ProjectsProps) => {
 
   return (
     <SectionWrapper>
-      <div className=" ">
-        <div className="w-full absolute -top-60 min-h-96">
-          <Image
-            src="/footer-grid.svg"
-            alt="grid"
-            width={20}
-            height={20}
-            className="w-full h-full opacity-30"
-          />
-        </div>
-        <div className="max-w-3xl mt-20">
+      <div>
+        <div className="max-w-5xl mt-20">
           <h1 className="heading">
             Work <span className="text-purple">Experience</span>
           </h1>
@@ -61,46 +52,43 @@ const Projects = ({ params }: ProjectsProps) => {
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-5 mt-10 max-w-5xl">
-              <div className="overflow-hidden rounded-md w-[300px] sm:w-[600px] flex flex-col gap-3  border border-white/[.2] p-3">
-                <Image
-                  src={experience?.thumbnail || ""}
-                  width={100}
-                  height={100}
-                  alt=""
-                  className="w-full h-32 rounded-md"
-                />
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base">
+            <div className="grid grid-cols-1 sm:grid-cols-5 gap-5 mt-10 p-3">
+              <div className="overflow-hidden rounded-md flex flex-col gap-3 border border-white/[.2] p-3 w-[300px] sm:max-w-full sm:col-span-2 ">
+                <div className="relative w-full  h-64">
+                  <Image
+                    src={experience?.thumbnail || ""}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Experience Thumbnail"
+                    className="rounded-md"
+                  />
+                </div>
+                <h1 className="font-bold text-xl sm:text-2xl">
                   {experience?.title}
                 </h1>
-                <div className="flex items-center justify-between ">
-                  <div className="flex items-center">
-                    {experience?.images.map((icon, index) => (
-                      <div
-                        key={index}
-                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                        style={{
-                          transform: `translateX(-${5 * index + 2}px)`,
-                        }}
-                      >
-                        <Image
-                          src={icon}
-                          width={100}
-                          height={100}
-                          alt="icon5"
-                          className="p-2 w-full h-full"
-                        />
-                      </div>
-                    ))}
-                  </div>
+                <div className="flex items-center">
+                  {experience?.images.map((icon, index) => (
+                    <div
+                      key={index}
+                      className="border border-white/[.2] rounded-full bg-black w-8 h-8 sm:w-10 sm:h-10 flex justify-center items-center"
+                      style={{
+                        transform: `translateX(-${5 * index + 2}px)`,
+                      }}
+                    >
+                      <Image
+                        src={icon}
+                        width={40}
+                        height={40}
+                        alt={`Icon ${index + 1}`}
+                        className="p-2 w-full h-full"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm "
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
+                className="text-sm sm:text-lg font-light sm:font-normal sm:col-span-3"
+                style={{ color: "#BEC1DD", margin: "1vh 0" }}
               >
                 {experience?.desc}
               </p>
